@@ -1,2 +1,2 @@
 # the-c-programming-language
-K&amp;R 2nd Edition
+My Solutions to exercises in K&amp;R's The C Programming Language 2nd Edition
