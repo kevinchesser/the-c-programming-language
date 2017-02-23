@@ -1,13 +1,14 @@
 #include <stdio.h>
 
+//Exercise 1.8
 int main(void){
-    int c, blank, tab, nl = 0;
+    int c, blank = 0, tab = 0, nl = 0;
     while((c = getchar()) != EOF){
-        if(c = '\t')
+        if(c == '\t')
             tab++;
-        if(c = ' ')
+        if(c == ' ')
             blank++;
-        if(c = '\n')
+        if(c == '\n')
             nl++;
     }
     printf("Blank: %3d Tab: %3d Newline: %3d", blank, tab, nl); 
