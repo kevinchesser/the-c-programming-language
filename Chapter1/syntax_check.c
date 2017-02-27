@@ -15,9 +15,38 @@ int main(int argc, char* argv[]){
         if(feof(fp)){
             break;
         }
-        printf("%c", c); 
+        switch(c){
+            case '(':
+                lParen++;
+                break;
+            case ')':
+                rParen++;
+                break;
+            case '{':
+                lBrace++;
+                break;
+            case '}':
+                rBrace++;
+                break;
+            case '[':
+                lBracket++;
+                break;
+            case ']':
+                rBracket++;
+                break;
+            default:
+                break;
+        }
     }
     fclose(fp);
-
+    if(lParen != rParen){
+        printf("Unbalanced amount of parens");
+    }
+    if(lBrace != rBrace){
+        printf("Unbalanced amount of braces");
+    }
+    if(lBracket!= rBracket){
+        printf("Unbalanced amount of brackets");
+    }
     return 0;
 }
