@@ -1,6 +1,7 @@
 #include <limits.h>
 #include <stdio.h>
 
+//Exercise 2.1 - Print the ranges for different data types
 int main(void){
     
 printf("Char max: %d\n", SCHAR_MAX);
